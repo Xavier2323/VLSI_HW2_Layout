@@ -7,4 +7,4 @@ My Layout:
 Post-sim waveform:
 ![image](https://github.com/user-attachments/assets/41455644-5a32-4ff9-99b2-68d26fbf73af)
 
-I have got Top 5 in class for both area and power performance, which are \\(82.8412 𝑢𝑚^2\\) and \\(18.2489 uW\\), respectively.
+I have got Top 5 in class for both area and power performance, which are $82.8412 𝑢𝑚^2$ and $18.2489 uW$, respectively.
