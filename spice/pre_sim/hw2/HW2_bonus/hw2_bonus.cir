@@ -1,0 +1,22 @@
+**Your code**
+.subckt INV in inv_out VDD GND
+Mp1 inv_out in VDD VDD p_18 l=0.18u w=0.47u
+Mn1 inv_out in GND GND n_18 l=0.18u w=0.47u
+.ends
+
+**Your design**
+.subckt hw2_bonus A B C S VDD GND
+**Your code**
+Xinv1 A inv_A VDD GND INV
+Xinv2 B inv_B VDD GND INV
+Xinv3 C inv_C VDD GND INV
+Mn1 n1 inv_B A GND n_18 l=0.18u w=0.47u
+Mp1 n1 B A VDD p_18 l=0.18u w=0.47u
+Mn2 n1 B inv_A GND n_18 l=0.18u w=0.47u
+Mp2 n1 inv_B inv_A VDD p_18 l=0.18u w=0.47u *A ^ B
+Xinv4 n1 inv_n1 VDD GND INV
+Mn3 S inv_n1 C GND n_18 l=0.18u w=0.47u
+Mp3 S n1 C VDD p_18 l=0.18u w=0.47u
+Mn4 S n1 inv_C GND n_18 l=0.18u w=0.47u
+Mp4 S inv_n1 inv_C VDD p_18 l=0.18u w=0.47u *A ^ B ^ C
+.ends

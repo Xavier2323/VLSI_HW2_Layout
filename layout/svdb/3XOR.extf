@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1731608292 1731608292
+lvs_ExtOutFile RUNDIR /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+lvs_ExtOutFile RULES_FILE /home/VLSI_1131/ts110060012/VLSI/hw2/layout/_Rule.rce_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/3XOR.sp
+lvs_ExtOutFile EXTRACTION_REPORT 3XOR.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP {  svdb/3XOR.pdsp }
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/3XOR.softchk

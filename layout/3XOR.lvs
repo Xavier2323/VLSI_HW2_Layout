@@ -1,0 +1,17 @@
+*lvsRulesFile: /home/VLSI_1131/ts110060012/VLSI/hw2/layout/calibre/Rule.lvs
+*lvsRunDir: /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+*lvsLayoutPaths: 3XOR.calibre.db
+*lvsLayoutPrimary: 3XOR
+*lvsLayoutLibrary: HW2
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: /home/VLSI_1131/ts110060012/VLSI/hw2/spice/pre_sim/hw2/HW2/110060012_HW2_XOR.sp
+*lvsSourcePrimary: hw2_XOR
+*lvsSourceLibrary: HW2
+*lvsSpiceFile: 3XOR.sp
+*lvsERCDatabase: 3XOR.erc.results
+*lvsERCSummaryFile: 3XOR.erc.summary
+*lvsReportFile: 3XOR.lvs.report
+*cmnFDILayoutLibrary: HW2
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: 3XOR.def

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='R-2020.12 linux64' PARAM_COUNT=0
+.TITLE '**110060012_hw2_bonus**'
+ power            delay1_xor       delay2_xor       temper          
+ alter#          
+  1.146e-05       -2.390e-09       -2.399e-09         30.0000       
+1               

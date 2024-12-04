@@ -1,0 +1,69 @@
+
+********************************************************************************
+Product   : Virtuoso(R) STREAM Out
+Program   : @(#)$CDS: pipo.exe version 5.1.0 11/22/2011 01:41 (cicln04) $
+SubVersion: sub-version 5.10.41.500.6.151
+Started at: 13-Nov-2024  02:45:19
+User Name : ts110060012
+Host Name : linuxcad30.ee.ncu.edu.tw
+Directory : /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+CADENCE Design Systems, Inc.
+********************************************************************************
+
+     1. translating cellview (Inv layout)
+
+			Individual Cell Statistics
+
+CellView          Rectangles Polygons   Paths Ellipses Labels Instances Arrays  Nodes
+*************************************************************************************
+Inv/layout -- (empty cell view, not deleted).
+
+
+                    Statistics Of Layers
+
+
+Cadence    Cadence    Stream   Stream
+ Layer     Purpose    Layer   Datatype Rectangles Polygons Paths  Ellipses  Labels   Nodes
+-------------------------------------------------------------------------------------------
+
+
+   Summary Of Objects
+
+------------------------
+       0 Rectangles
+       0 Polygons
+       0 Paths
+       0 Ellipses
+       0 Labels
+       0 Instances
+       0 Arrays
+       1 Cells
+       0 Nodes
+
+
+00:00:00 Elapsed time
+00:00:00 CPU time
+
+    2179 Kbytes of memory
+
+*** There were no error or warning message ***
+
+The setup file's contents :
+
+streamOutKeys = list(nil
+	'userSkillFile             ""
+	'layerTable                ""
+	'convertPin                "geometry"
+	'libVersion                "5.0"
+	'units                     "micron"
+	'scale                     0.001
+	'cellMapTable              ""
+	'caseSensitivity           "preserve"
+	'summaryFile               "PIPO.SUM.Inv"
+	'errFile                   "PIPO.LOG.Inv"
+	'outFile                   "/home/VLSI_1131/ts110060012/VLSI/hw2/layout/Inv.calibre.db"
+	'viewName                  "layout"
+	'primaryCell               "Inv"
+	'libName                   "HW2"
+	'runDir                    "/home/VLSI_1131/ts110060012/VLSI/hw2/layout/"
+)

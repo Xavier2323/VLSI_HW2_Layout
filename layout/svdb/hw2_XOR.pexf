@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+pex_PexParam LAYOUT_PRIMARY hw2_XOR
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {HW2_XOR "" HW2_XOR.pdb "" } } 

@@ -1,0 +1,749 @@
+ ****** HSPICE -- R-2020.12 linux64 (Nov 23 2020 6727817) ******                
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: post_XOR.sp                                                       
+  Command line options: /home/tools/synopsys/hspice/2020.12/hspice/linux64/hspice -i post_XOR.sp -o post_XOR.lis
+  Start time: Sat Nov 23 20:21:16 2024
+ lic:  
+ lic: FLEXlm: SDK_12.9 
+ lic: USER:   ts110060012          HOSTNAME: linuxcad30.ee.ncu.edu.tw 
+ lic: HOSTID: "524f268a8c96"       PID:      10138 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
+ lic: 318(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  **warning** (hw2_XOR.pex.cir:7) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- R-2020.12 linux64 (Nov 23 2020 6727817) ******                
+ ******  
+ **110060012_hw2_xor**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xhw2_xor.                       hw2_xor            1.00 
+        2 xhw2_xor.x_pm_hw2_xor%a.        pm_hw2_xor%a       1.00 
+        3 xhw2_xor.x_pm_hw2_xor%b.        pm_hw2_xor%b       1.00 
+        4 xhw2_xor.x_pm_hw2_xor%3.        pm_hw2_xor%3       1.00 
+        5 xhw2_xor.x_pm_hw2_xor%4.        pm_hw2_xor%4       1.00 
+        6 xhw2_xor.x_pm_hw2_xor%5.        pm_hw2_xor%5       1.00 
+        7 xhw2_xor.x_pm_hw2_xor%6.        pm_hw2_xor%6       1.00 
+        8 xhw2_xor.x_pm_hw2_xor%7.        pm_hw2_xor%7       1.00 
+        9 xhw2_xor.x_pm_hw2_xor%8.        pm_hw2_xor%8       1.00 
+       10 xhw2_xor.x_pm_hw2_xor%9.        pm_hw2_xor%9       1.00 
+       11 xhw2_xor.x_pm_hw2_xor%10.       pm_hw2_xor%10      1.00 
+       12 xhw2_xor.x_pm_hw2_xor%c.        pm_hw2_xor%c       1.00 
+       13 xhw2_xor.x_pm_hw2_xor%s.        pm_hw2_xor%s       1.00 
+       14 xhw2_xor.x_pm_hw2_xor%13.       pm_hw2_xor%13      1.00 
+       15 xhw2_xor.x_pm_hw2_xor%14.       pm_hw2_xor%14      1.00 
+       16 xhw2_xor.x_pm_hw2_xor%15.       pm_hw2_xor%15      1.00 
+       17 xhw2_xor.x_pm_hw2_xor%gnd.      pm_hw2_xor%gnd     1.00 
+       18 xhw2_xor.x_pm_hw2_xor%vdd.      pm_hw2_xor%vdd     1.00 
+  **info** (post_XOR.sp:21) DC voltage reset to initial transient source value in source 0:v1. new dc=0.0000D+00
+ 
+
+ Warning(s) associated with encrypted block(s) were suppressed due to encrypted content.
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-03  ~  1e-02|5         |2.0408    |
+ |1e-02  ~  1e-01|17        |6.9388    |
+ |1e-01  ~  1e+00|52        |21.2245   |
+ |1e+00  ~  1e+03|171       |69.7959   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-18  ~  1e-17|4         |3.8095    |
+ |1e-17  ~  1e-16|28        |26.6667   |
+ |1e-16  ~  1e-15|66        |62.8571   |
+ |1e-15  ~  1e-14|7         |6.6667    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|245       |
+ |            |          |
+ |Constant Cap|105       |
+ -------------------------
+              
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=post_XOR.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **110060012_hw2_xor**
+
+ ****** operating point information tnom=  25.000 temp=  30.000 ******
+ ****** operating point status is all       simulation time is     0.     
+     node    =voltage       node    =voltage       node    =voltage
+
+ + 0:a       =   0.       0:b       =   0.       0:c       =   0.     
+ + 0:s       = 148.0940n  0:vdd     =   1.8000   1:n_10_m14= 431.1947m
+ + 1:n_10_m15= 431.1947m  1:n_10_m19= 431.1947m  1:n_13_m10=   1.8000 
+ + 1:n_13_m16=   1.8000   1:n_13_m21=   1.8000   1:n_13_m5_=   1.8000 
+ + 1:n_14_m6_=  49.8524n  1:n_14_m7_=  49.4047n  1:n_14_m8_=  49.6153n
+ + 1:n_15_m17= 450.2561m  1:n_15_m18= 450.2561m  1:n_15_m19= 450.2561m
+ + 1:n_3_m0_s=  73.3428n  1:n_3_m2_d=  73.3428n  1:n_3_m3_s=  73.3428n
+ + 1:n_4_m11_=   1.8000   1:n_4_m13_=   1.8000   1:n_4_m14_=   1.8000 
+ + 1:n_5_m0_d=  98.4965n  1:n_5_m5_d=  98.7088n  1:n_5_m6_s=  98.2693n
+ + 1:n_6_m11_=   1.8000   1:n_6_m16_=   1.8000   1:n_6_m17_=   1.8000 
+ + 1:n_7_m12_=   1.8000   1:n_7_m18_=   1.8000   1:n_7_m1_s=   1.8000 
+ + 1:n_7_m7_g=   1.8000   1:n_8_m14_=   1.8000   1:n_8_m17_=   1.8000 
+ + 1:n_8_m20_=   1.8000   1:n_8_m3_g=   1.8000   1:n_8_m6_g=   1.8000 
+ + 1:n_8_m9_s=   1.8000   1:n_9_m3_d=  73.3428n  1:n_9_m4_s=  73.3428n
+ + 1:n_9_m8_s=  73.3428n  1:n_a_m12_=   0.       1:n_a_m13_=   0.     
+ + 1:n_a_m1_g=   0.       1:n_a_m2_g=   0.       1:n_b_m0_g=   0.     
+ + 1:n_b_m11_=   0.       1:n_b_m19_=   0.       1:n_b_m20_=   0.     
+ + 1:n_b_m8_g=   0.       1:n_b_m9_g=   0.       1:n_c_m10_=   0.     
+ + 1:n_c_m15_=   0.       1:n_c_m21_=   0.       1:n_c_m4_g=   0.     
+ + 1:n_gnd_m0= 120.8032p  1:n_gnd_m1=   1.3247n  1:n_gnd_m1= 697.8979p
+ + 1:n_gnd_m2= 543.7702p  1:n_gnd_m7= 987.6981p  1:n_gnd_m9=   1.3078n
+ + 1:n_s_m15_= 148.9792n  1:n_s_m16_= 148.8730n  1:n_s_m4_d= 147.3363n
+ + 1:n_s_m5_s= 147.1257n  1:n_vdd_m1=   1.8000   1:n_vdd_m1=   1.8000 
+ + 1:n_vdd_m1=   1.8000   1:n_vdd_m1=   1.8000   1:n_vdd_m2=   1.8000 
+ + 1:n_vdd_m2=   1.8000   2:3       =   0.       2:4       =   0.     
+ + 2:22      =   0.       2:23      =   0.       2:24      =   0.     
+ + 2:25      =   0.       2:27      =   0.       2:28      =   0.     
+ + 2:29      =   0.       2:30      =   0.       2:36      =   0.     
+ + 3:13      =   0.       3:17      =   0.       3:30      =   0.     
+ + 3:31      =   0.       3:32      =   0.       3:33      =   0.     
+ + 3:35      =   0.       3:36      =   0.       3:38      =   0.     
+ + 3:41      =   0.       3:42      =   0.       3:43      =   0.     
+ + 3:44      =   0.       3:50      =   0.       3:53      =   0.     
+ + 3:56      =   0.       4:6       =  73.3428n  4:7       =  73.3428n
+ + 4:12      =  73.3428n  4:13      =  73.3428n  4:15      =  73.3428n
+ + 4:16      =  73.3428n  4:19      =  73.3428n  4:20      =  73.3428n
+ + 5:6       =   1.8000   5:7       =   1.8000   5:12      =   1.8000 
+ + 5:13      =   1.8000   5:15      =   1.8000   5:16      =   1.8000 
+ + 5:19      =   1.8000   5:20      =   1.8000   6:6       =  98.4965n
+ + 6:7       =  98.4965n  6:12      =  98.4965n  6:13      =  98.4965n
+ + 6:15      =  98.4965n  6:16      =  98.4965n  6:19      =  98.4965n
+ + 6:20      =  98.4965n  7:6       =   1.8000   7:7       =   1.8000 
+ + 7:12      =   1.8000   7:13      =   1.8000   7:15      =   1.8000 
+ + 7:16      =   1.8000   7:19      =   1.8000   7:20      =   1.8000 
+ + 8:6       =   1.8000   8:7       =   1.8000   8:11      =   1.8000 
+ + 8:12      =   1.8000   8:23      =   1.8000   8:24      =   1.8000 
+ + 8:25      =   1.8000   8:26      =   1.8000   8:28      =   1.8000 
+ + 8:29      =   1.8000   8:33      =   1.8000   9:7       =   1.8000 
+ + 9:8       =   1.8000   9:12      =   1.8000   9:13      =   1.8000 
+ + 9:32      =   1.8000   9:33      =   1.8000   9:34      =   1.8000 
+ + 9:35      =   1.8000   9:37      =   1.8000   9:38      =   1.8000 
+ + 9:39      =   1.8000   9:40      =   1.8000   9:43      =   1.8000 
+ + 9:47      =   1.8000   9:49      =   1.8000   9:50      =   1.8000 
+ +10:7       =  73.3428n 10:8       =  73.3428n 10:11      =  73.3428n
+ +10:12      =  73.3428n 10:15      =  73.3428n 10:16      =  73.3428n
+ +10:19      =  73.3428n 10:20      =  73.3428n 11:7       = 431.1947m
+ +11:8       = 431.1947m 11:11      = 431.1947m 11:12      = 431.1947m
+ +11:15      = 431.1947m 11:16      = 431.1947m 11:19      = 431.1947m
+ +11:20      = 431.1947m 12:21      =   0.      12:23      =   0.     
+ +12:24      =   0.      12:26      =   0.      12:28      =   0.     
+ +12:29      =   0.      12:31      =   0.      12:32      =   0.     
+ +12:35      =   0.      12:36      =   0.      13:6       = 148.8202n
+ +13:7       = 148.1130n 13:11      = 147.3363n 13:12      = 148.0435n
+ +13:14      = 148.0940n 13:15      = 148.0940n 14:6       =   1.8000 
+ +14:7       =   1.8000  14:11      =   1.8000  14:12      =   1.8000 
+ +14:23      =   1.8000  14:24      =   1.8000  14:25      =   1.8000 
+ +14:26      =   1.8000  14:29      =   1.8000  14:32      =   1.8000 
+ +14:33      =   1.8000  15:4       =  49.6153n 15:6       =  49.6153n
+ +15:7       =  49.6153n 15:11      =  49.6153n 15:12      =  49.6153n
+ +15:15      =  49.6153n 15:16      =  49.6153n 15:21      =  49.6153n
+ +15:22      =  49.6153n 16:7       = 450.2561m 16:8       = 450.2561m
+ +16:11      = 450.2561m 16:12      = 450.2561m 16:15      = 450.2561m
+ +16:16      = 450.2561m 16:19      = 450.2561m 16:20      = 450.2561m
+ +17:2       =  30.0470p 17:3       =  32.4306p 17:4       =  25.8083p
+ +17:5       =  29.8358p 17:6       =  58.8137p 17:7       =  24.5562p
+ +17:10      = 115.4974p 17:11      =  63.8248p 17:12      =  25.8904p
+ +17:13      =  25.6482p 17:14      =  62.2944p 17:15      =  61.9609p
+ +17:16      = 117.9567p 17:20      =  32.5860p 17:27      = 543.7701p
+ +17:28      =  30.2539p 17:31      = 775.4528p 17:32      =  68.3033p
+ +17:37      =   1.1537n 17:38      = 126.6837p 17:45      =  32.4528p
+ +18:2       =   1.8000  18:3       =   1.8000  18:4       =   1.8000 
+ +18:5       =   1.8000  18:6       =   1.8000  18:7       =   1.8000 
+ +18:10      =   1.8000  18:11      =   1.8000  18:12      =   1.8000 
+ +18:13      =   1.8000  18:14      =   1.8000  18:15      =   1.8000 
+ +18:16      =   1.8000  18:17      =   1.8000  18:22      =   1.8000 
+ +18:23      =   1.8000  18:26      =   1.8000  18:27      =   1.8000 
+ +18:32      =   1.8000  18:33      =   1.8000  18:36      =   1.8000 
+
+
+ **** voltage sources
+
+ subckt                                                  
+ element   0:v1        0:v2        0:v3        0:vdd     
+  volts       0.          0.          0.          1.8000 
+  current     0.          0.          0.       -143.0474p
+  power       0.          0.          0.        257.4852p
+
+     total voltage source power dissipation=  257.4852p       watts
+
+
+
+ **** resistors
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   2:r10       2:r11       2:r12       2:r13       2:r14     
+  r value   667.1600m     8.0702      8.0702     13.2552      8.0000 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   2:r15       2:r16       2:r17       2:r18       2:r19     
+  r value     8.0702      8.0702     13.2552    165.7500     97.7500 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   2:r20       2:r21       2:r22       2:r23       2:r24     
+  r value   196.7500     66.7500    141.4000m   169.2170m    39.1994m
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   3:r13       3:r14       3:r15       3:r16       3:r17     
+  r value   491.4000m     1.8382    209.5600m     8.0000      8.0702 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   3:r18       3:r19       3:r20       3:r21       3:r22     
+  r value     8.0702     13.2552      8.0000      5.4383     13.2552 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   3:r23       3:r24       3:r25       3:r26       3:r27     
+  r value     8.0000      8.0702      8.0702     13.2552     92.7500 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   3:r28       3:r29       3:r30       3:r31       3:r32     
+  r value   170.7500      4.7330     92.7500      4.7330    170.7500 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   3:r33       3:r34       4:r3        4:r4        4:r5      
+  r value    92.7500    170.7500      8.0000    754.0000m     8.0000 
+  v drop      0.          0.        -33.1623a     3.1256a    33.1623a
+  current     0.          0.         -4.1453a     4.1453a     4.1453a
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   4:r6        4:r7        4:r8        4:r9        4:r10     
+  r value   148.4000m    16.3327      4.9021      4.8638    148.4000m
+  v drop   -6.152e-19   -67.7029a   -60.2100a    39.5779a   6.152e-19
+  current    -4.1453a    -4.1452a   -12.2824a     8.1372a     4.1453a
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   4:r11       4:r12       5:r3        5:r4        5:r5      
+  r value    16.3327      5.0553      8.0000    754.0000m     8.0000 
+  v drop     67.7042a    20.9559a   132.2034p   -12.4600p  -132.2049p
+  current     4.1453a     4.1453a    16.5254p   -16.5252p   -16.5256p
+  power       0.          0.        2.185e-21   2.059e-22   2.185e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   5:r6        5:r7        5:r8        5:r9        5:r10     
+  r value   148.4000m    16.3327      4.9021      4.8638    148.4000m
+  v drop      2.4527p   269.9327p   117.9774p   -36.6707p    -2.4523p
+  current    16.5277p    16.5271p    24.0666p    -7.5395p   -16.5247p
+  power     4.054e-23   4.461e-21   2.839e-21   2.765e-22   4.052e-23
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   5:r11       5:r12       6:r3        6:r4        6:r5      
+  r value    16.3327      5.0553      8.0000      1.1180      8.0000 
+  v drop   -269.8974p   -83.5387p    34.5353a    -4.8263a   -34.5353a
+  current   -16.5250p   -16.5249p     4.3169a    -4.3169a    -4.3169a
+  power     4.460e-21   1.380e-21     0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   6:r6        6:r7        6:r8        6:r9        6:r10     
+  r value   294.0000m    16.3327      4.9021      5.2468    294.0000m
+  v drop      1.2692a    70.5060a   212.2453p  -227.1688p    -1.2692a
+  current     4.3169a     4.3169a    43.2966p   -43.2965p    -4.3170a
+  power       0.          0.        9.189e-21   9.836e-21     0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   6:r11       6:r12       7:r3        7:r4        7:r5      
+  r value    16.3327      5.0936      8.0000      1.1180      8.0000 
+  v drop    -70.5075a   -21.9889a  -132.2011p    18.4752p   132.2011p
+  current    -4.3170a    -4.3169a   -16.5251p    16.5252p    16.5251p
+  power       0.          0.        2.185e-21   3.053e-22   2.185e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   7:r6        7:r7        7:r8        7:r9        7:r10     
+  r value   294.0000m    16.3327      4.9021      5.2468    294.0000m
+  v drop     -4.8583p  -269.9099p   -44.3710p   -39.2175p     4.8583p
+  current   -16.5250p   -16.5257p    -9.0514p    -7.4745p    16.5250p
+  power     8.028e-23   4.460e-21   4.016e-22   2.931e-22   8.028e-23
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   7:r11       7:r12       8:r6        8:r7        8:r8      
+  r value    16.3327      5.0936      1.2324      8.0000      8.0000 
+  v drop    269.8977p    84.1720p     0.        888.1784a  -888.1784a
+  current    16.5250p    16.5250p     0.        111.0223a  -111.0223a
+  power     4.460e-21   1.391e-21     0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   8:r9        8:r10       8:r11       8:r12       8:r13     
+  r value     8.0702      8.0702     13.2552    144.7500    118.7500 
+  v drop      0.          0.         -1.1102f   222.0446a     0.     
+  current     0.          0.        -83.7575a     1.5340a     0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   8:r14       8:r15       8:r16       8:r17       8:r18     
+  r value   730.5200m    16.3327      5.2468    876.4000m    16.3327 
+  v drop    -24.2837p  -542.9219p  -174.4112p    29.1334p   542.9388p
+  current   -33.2416p   -33.2414p   -33.2414p    33.2421p    33.2424p
+  power     8.072e-22   1.805e-20   5.798e-21   9.685e-22   1.805e-20
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   8:r19       9:r10       9:r11       9:r12       9:r13     
+  r value     5.2468      8.0000    865.8000m   546.0000m     8.0000 
+  v drop    174.4171p     5.9952f  -888.1784a     0.       -888.1784a
+  current    33.2425p   749.4005a    -1.0258f     0.       -111.0223a
+  power     5.798e-21     0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   9:r14       9:r15       9:r16       9:r17       9:r18     
+  r value     8.0702      8.0702     13.2552      8.0000      8.0702 
+  v drop      0.          0.         -1.1102f  -444.0892a     0.     
+  current     0.          0.        -83.7575a   -55.5112a     0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   9:r19       9:r20       9:r21       9:r22       9:r23     
+  r value     8.0702     13.2552    118.7500    144.7500    118.7500 
+  v drop      0.       -888.1784a  -222.0446a     0.       -222.0446a
+  current     0.        -67.0060a    -1.8698a     0.         -1.8698a
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   9:r24       9:r25       9:r26       9:r27       9:r28     
+  r value   144.7500    876.1200m    16.3327      4.8638    730.8000m
+  v drop    222.0446a   -29.1236p  -542.9224p  -161.6802p    24.2939p
+  current     1.5340a   -33.2416p   -33.2414p   -33.2413p    33.2429p
+  power       0.        9.681e-22   1.805e-20   5.374e-21   8.076e-22
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element   9:r29       9:r30      10:r3       10:r4       10:r5      
+  r value    16.3327      4.8638      8.0000    933.4000m     8.0000 
+  v drop    542.9437p   161.6871p   -32.4208a     3.7827a    32.4208a
+  current    33.2427p    33.2428p    -4.0526a     4.0526a     4.0526a
+  power     1.805e-20   5.375e-21     0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  10:r6       10:r7       10:r8       10:r9       10:r10     
+  r value   148.4000m    16.3327      4.8638    148.4000m    16.3327 
+  v drop   -6.014e-19   -66.1899a   -19.7112a   6.014e-19    66.1904a
+  current    -4.0526a    -4.0526a    -4.0526a     4.0526a     4.0526a
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  10:r11      10:r12      11:r3       11:r4       11:r5      
+  r value     5.6681      4.8638      8.0000    933.4000m     8.0000 
+  v drop    -46.9525a    60.0016a   162.9444p   -19.0116p  -162.9445p
+  current    -8.2836a    12.3363a    20.3680p   -20.3681p   -20.3681p
+  power       0.          0.        3.319e-21   3.872e-22   3.319e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  11:r6       11:r7       11:r8       11:r9       11:r10     
+  r value   148.4000m    16.3327      4.8638    148.4000m    16.3327 
+  v drop      3.0226p   332.6641p    99.0665p    -3.0226p  -332.6630p
+  current    20.3678p    20.3680p    20.3680p   -20.3682p   -20.3679p
+  power     6.156e-23   6.776e-21   2.018e-21   6.157e-23   6.776e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  11:r11      11:r12      12:r9       12:r10      12:r11     
+  r value     5.6681      4.8638    258.4400m     8.0000      1.5054 
+  v drop     50.4933p  -142.3949p     0.          0.          0.     
+  current     8.9084p   -29.2763p     0.          0.          0.     
+  power     4.498e-22   4.169e-21     0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  12:r12      12:r13      12:r14      12:r15      12:r16     
+  r value     8.0000      8.0702      8.0702     13.2552      8.0702 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  12:r17      12:r18      12:r19      12:r20      12:r21     
+  r value     8.0702     13.2552    196.7500     66.7500    196.7500 
+  v drop      0.          0.          0.          0.          0.     
+  current     0.          0.          0.          0.          0.     
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  12:r22      13:r2       13:r3       13:r4       13:r5      
+  r value    66.7500      1.6442      8.0000      1.1673     16.3327 
+  v drop      0.          0.          0.        -50.5409p  -707.1498p
+  current     0.          0.          0.        -43.2966p   -43.2966p
+  power       0.          0.          0.        2.188e-21   3.062e-20
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  13:r6       13:r7       13:r8       13:r9       13:r10     
+  r value     4.9021      4.8638    439.6000m    16.3327      4.9021 
+  v drop    -61.5548a  -210.5871p    19.0332p   707.1498p   159.0508p
+  current   -12.5567a   -43.2966p    43.2966p    43.2966p    32.4453p
+  power       0.        9.118e-21   8.241e-22   3.062e-20   5.160e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  13:r11      14:r6       14:r7       14:r8       14:r9      
+  r value     4.8638      8.0000      1.3777      8.0000      8.0702 
+  v drop     52.7789p  -444.0892a   222.0446a  -222.0446a  -222.0446a
+  current    10.8513p   -55.5112a   161.1658a   -27.7556a   -27.5141a
+  power     5.727e-22     0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  14:r10      14:r11      14:r12      14:r13      14:r14     
+  r value     8.0702     13.2552    170.7500     92.7500    584.9200m
+  v drop      0.       -222.0446a   222.0446a   444.0892a   -19.4436p
+  current     0.        -16.7515a     1.3004a     4.7880a   -33.2414p
+  power       0.          0.          0.          0.        6.463e-22
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  14:r15      14:r16      14:r17      14:r18      14:r19     
+  r value    16.3327      5.0745      1.0220     16.3327      5.0745 
+  v drop   -542.9222p  -168.6828p    33.9728p   542.9239p   168.6828p
+  current   -33.2414p   -33.2415p    33.2415p    33.2415p    33.2415p
+  power     1.805e-20   5.607e-21   1.129e-21   1.805e-20   5.607e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  15:r4       15:r5       15:r6       15:r7       15:r8      
+  r value     8.0000    294.0000m    16.3327      4.9021     16.3327 
+  v drop     31.4390a     1.1554a    64.1851a    19.2646a   -64.1843a
+  current     3.9299a     3.9299a     3.9299a     3.9299a    -3.9298a
+  power       0.          0.          0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  15:r9       15:r10      15:r11      15:r12      15:r13     
+  r value     5.4766      4.8638    561.6000m     8.0000    258.7200m
+  v drop    237.1179p  -210.5871p    -2.2070a   -31.4390a     1.0167a
+  current    43.2965p   -43.2966p    -3.9299a    -3.9299a     3.9298a
+  power     1.027e-20   9.118e-21     0.          0.          0.     
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  15:r14      16:r3       16:r4       16:r5       16:r6      
+  r value    31.0889m     8.0000    559.0000m     8.0000    294.0000m
+  v drop   -1.222e-19  -141.1914p     9.8658p   141.1911p    -5.1888p
+  current    -3.9297a   -17.6489p    17.6490p    17.6489p   -17.6490p
+  power       0.        2.492e-21   1.741e-22   2.492e-21   9.158e-23
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  16:r7       16:r8       16:r9       16:r10      16:r11     
+  r value    16.3327      4.9021    294.0000m    16.3327      5.4766 
+  v drop   -288.2572p   -86.5181p     5.1887p   288.2531p    48.3276p
+  current   -17.6491p   -17.6491p    17.6488p    17.6488p     8.8244p
+  power     5.087e-21   1.527e-21   9.157e-23   5.087e-21   4.265e-22
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  16:r12      17:r11      17:r12      17:r13      17:r14     
+  r value     4.8638     16.3327      4.9021      5.4383     16.3327 
+  v drop     42.9205p     1.0270n   154.1277p   170.9855p   707.1496p
+  current     8.8244p    62.8819p    31.4410p    31.4410p    43.2966p
+  power     3.787e-22   6.458e-20   4.846e-21   5.376e-21   3.062e-20
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  17:r15      17:r16      17:r17      17:r18      17:r19     
+  r value     4.9021     16.3327      4.9021      5.0553     24.6522m
+  v drop    212.2453p   513.5162p   154.1277p    61.7192a   133.1530f
+  current    43.2966p    31.4410p    31.4410p    12.2088a     5.4013p
+  power     9.189e-21   1.615e-20   4.846e-21     0.        7.192e-25
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  17:r20      17:r21      17:r22      17:r23      17:r24     
+  r value    16.3327    138.7830m   138.7830m     7.7032m   138.7830m
+  v drop     88.2172p    -8.7269p    -6.0088p   333.5229f    -4.3635p
+  current     5.4013p   -62.8819p   -43.2966p    43.2966p   -31.4410p
+  power     4.765e-22   5.488e-22   2.602e-22   1.444e-23   1.372e-22
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  17:r25      17:r26      17:r27      17:r28      17:r29     
+  r value     7.7032m    29.6412m    39.1110m   821.7390m    29.6412m
+  v drop    242.1968f     1.8639p    -2.4594p    51.6726p    -1.0920p
+  current    31.4410p    62.8819p   -62.8819p    62.8819p   -36.8422p
+  power     7.615e-24   1.172e-22   1.547e-22   3.249e-21   4.023e-23
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  17:r30      17:r31      17:r32      17:r33      17:r34     
+  r value   666.5220m    29.6412m   553.9130m    29.6412m   745.6520m
+  v drop     24.5562p    -3.1473p    58.8137p   160.0999f    -4.0275p
+  current    36.8422p  -106.1785p   106.1785p     5.4013p    -5.4013p
+  power     9.047e-22   3.342e-22   6.245e-21   8.647e-25   2.175e-23
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  17:r35      17:r36      17:r37      18:r12      18:r13     
+  r value     4.1110m    39.1110m   441.3040m    16.3327      4.9021 
+  v drop    -22.2047f   211.2488f    -2.3836p    -1.0859n  -162.9614p
+  current    -5.4013p     5.4013p    -5.4013p   -66.4846p   -33.2430p
+  power     1.199e-25   1.141e-24   1.287e-23   7.219e-20   5.417e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  18:r14      18:r15      18:r16      18:r17      18:r18     
+  r value     5.4383     16.3327      4.9021     16.3327      4.9021 
+  v drop   -180.7776p  -122.0815p   -36.6420p  -936.0142p  -162.9594p
+  current   -33.2416p    -7.4747p    -7.4747p   -57.3092p   -33.2426p
+  power     6.009e-21   9.125e-22   2.739e-22   5.364e-20   5.417e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  18:r19      18:r20      18:r21      18:r22      18:r23     
+  r value     5.0553     16.3327    138.4780m   138.4780m     7.7032m
+  v drop   -121.6645p  -192.0155p     9.2066p     1.0352p   -57.5096f
+  current   -24.0666p   -11.7565p    66.4845p     7.4754p    -7.4657p
+  power     2.928e-21   2.257e-21   6.121e-22   7.738e-24   4.293e-25
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  18:r24      18:r25      18:r26      18:r27      18:r28     
+  r value   138.4780m     7.7032m    35.3043m    29.6412m    39.1110m
+  v drop      7.9359p  -441.2026f   414.7793f    -1.9711p     2.6004p
+  current    57.3078p   -57.2751p    11.7487p   -66.4983p    66.4868p
+  power     4.548e-22   2.527e-23   4.873e-24   1.311e-22   1.729e-22
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  18:r29      18:r30      18:r31      18:r32      18:r33     
+  r value   821.7390m    29.6412m   718.2610m    29.6412m   502.1740m
+  v drop    -54.6365p     2.0479p   -49.6285p     2.1920p   -37.1370p
+  current   -66.4889p    69.0902p   -69.0954p    73.9519p   -73.9524p
+  power     3.633e-21   1.415e-22   3.429e-21   1.621e-22   2.746e-21
+
+ subckt    xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x  xhw2_xor.x
+ element  18:r34      18:r35      18:r36      18:r37      18:r38     
+  r value    29.6412m   745.6520m    39.1110m    39.1110m   441.3040m
+  v drop   -348.6100f     8.7685p  -460.0764f   459.6323f    -5.1896p
+  current   -11.7610p    11.7596p   -11.7634p    11.7520p   -11.7598p
+  power     4.100e-24   1.031e-22   5.412e-24   5.402e-24   6.103e-23
+
+
+
+ **** mosfets
+
+
+ subckt    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor  
+ element   1:m0        1:m1        1:m2        1:m3        1:m4      
+ model     0:n_18.1    0:n_18.1    0:n_18.1    0:n_18.1    0:n_18.1  
+ region    Cutoff      Cutoff      Cutoff      Linear      Cutoff    
+  id          4.1934a   -29.6410p    12.1364a     8.2104a    12.3355a
+  ibs      -1.710e-23  -426.1028a  -3.498e-26  -5.939e-24  -6.405e-24
+  ibd      -2.297e-23  -5.923e-26  -5.939e-24  -6.405e-24  -1.194e-23
+  vgs       -73.3428n    -1.8000   -543.7702p     1.8000    -73.3428n
+  vds        25.1538n    -1.8000     72.7990n     9.1814f    73.9936n
+  vbs       -73.2219n    -1.8000   -422.9670p   -73.2219n   -73.2220n
+  vth       487.4233m   420.6683m   487.4233m   487.4233m   487.4233m
+  vdsat      57.3082m    57.2832m    57.3082m   547.3153m    57.3082m
+  vod      -487.4234m  -420.6683m  -487.4233m     1.3126   -487.4234m
+  beta      928.3725u   933.1625u   928.3725u   706.1776u   928.3725u
+  gam eff   507.4459m   507.4459m   507.4459m   507.4459m   507.4459m
+  gm        125.6555a   950.1982p   363.6677a     3.5901a   369.6343a
+  gds       166.7107p    25.0634p   166.7109p   901.3777u   166.7105p
+  gmb        13.3198a   124.2676p    38.5498a     1.0682a    39.1823a
+  cdtot     859.6514a   615.0399a   611.2617a     1.3010f   611.2617a
+  cgtot     532.0699a   532.0701a   532.0699a     1.0148f   532.0699a
+  cstot     859.6513a   632.5150a   615.0395a     1.2193f   626.3733a
+  cbtot       1.5214f     1.0496f     1.0284f     1.0172f     1.0397f
+  cgs       182.5066a   182.5010a   182.5066a   475.3567a   182.5066a
+  cgd       182.5012a   182.5071a   182.5012a   480.4680a   182.5012a
+
+
+
+ subckt    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor  
+ element   1:m5        1:m6        1:m7        1:m8        1:m9      
+ model     0:n_18.1    0:n_18.1    0:n_18.1    0:n_18.1    0:n_18.1  
+ region    Linear      Linear      Linear      Cutoff      Cutoff    
+  id        -43.2966p   -43.2965p   -43.2966p    -3.9556a   -29.6410p
+  ibs      -1.191e-23  -8.257e-24  -4.216e-24  -1.687e-23  -414.6517a
+  ibd      -8.326e-24  -4.288e-24  -2.438e-25  -1.140e-23  -1.139e-25
+  vgs         1.8000      1.8000      1.8000    -73.3428n    -1.8000 
+  vds       -48.4170n   -48.4170n   -48.4170n   -23.7275n    -1.8000 
+  vbs      -147.0049n   -98.1485n   -49.2839n   -73.2220n    -1.8000 
+  vth       487.4234m   487.4233m   487.4233m   487.4233m   420.6683m
+  vdsat     547.3153m   547.3153m   547.3153m    57.3082m    57.2832m
+  vod         1.3126      1.3126      1.3126   -487.4234m  -420.6683m
+  beta      706.1776u   706.1776u   706.1775u   928.3725u   933.1625u
+  gam eff   507.4459m   507.4459m   507.4459m   507.4459m   507.4459m
+  gm         18.9321p    18.9321p    18.9321p   118.5307a   950.1982p
+  gds       901.3775u   901.3776u   901.3776u   166.7108p    25.0634p
+  gmb         5.6328p     5.6328p     5.6328p    12.5646a   124.2676p
+  cdtot       1.2268f     1.2306f     1.4601f   852.0955a   622.5958a
+  cgtot       1.0148f     1.0148f     1.0148f   532.0699a   532.0701a
+  cstot       1.2859f     1.2935f     1.2972f   852.0955a   622.9870a
+  cbtot       1.0096f     1.0210f     1.2542f     1.5063f     1.0476f
+  cgs       480.4680a   480.4680a   480.4680a   182.5012a   182.5010a
+  cgd       475.3568a   475.3568a   475.3568a   182.5066a   182.5071a
+
+
+
+ subckt    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor  
+ element   1:m10       1:m11       1:m12       1:m13       1:m14     
+ model     0:n_18.1    0:p_18.1    0:p_18.1    0:p_18.1    0:p_18.1  
+ region    Cutoff      Linear      Linear      Linear      Cutoff    
+  id         29.6410p   -16.5250p    33.2425p   -24.0667p    -6.1707p
+  ibs      -1.153e-25   1.682e-23   2.327e-23   4.875e-26   5.821e-24
+  ibd      -420.3773a   2.816e-23   5.289e-26   5.806e-24    73.1430a
+  vgs        -1.3247n    -1.8000     -1.8000     -1.8000    -45.2071n
+  vds         1.8000    -79.9474n   160.8262n  -116.4339n    -1.3688 
+  vbs        -1.2039n   118.3154n   161.7259n   858.3989p   117.4469n
+  vth       420.6683m  -516.3362m  -516.3361m  -516.3361m  -507.6805m
+  vdsat      57.2832m  -993.8767m  -993.8768m  -993.8768m   -57.3629m
+  vod      -420.6683m    -1.2837     -1.2837     -1.2837    507.6805m
+  beta      933.1625u   212.9778u   212.9778u   212.9778u   255.2040u
+  gam eff   507.4459m   557.0847m   557.0847m   557.0847m   557.0847m
+  gm        950.1982p     8.8439p    17.7909p    12.8801p   156.8266p
+  gds        25.0634p   207.0769u   207.0769u   207.0769u     2.4100p
+  gmb       124.2676p     4.5165p     9.0857p     6.5778p    55.9623p
+  cdtot     627.7510a     1.5719f     1.2144f     1.2604f   399.4370a
+  cgtot     532.0701a     1.0533f     1.0533f     1.0533f   546.9575a
+  cstot     622.5958a     1.5212f     1.5813f     1.2144f   489.4601a
+  cbtot       1.0524f     1.4774f     1.1799f   859.0156a   761.4904a
+  cgs       182.5071a   531.8834a   514.4975a   531.8834a   168.5960a
+  cgd       182.5010a   514.4975a   531.8834a   514.4975a   168.5890a
+
+
+
+ subckt    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor    xhw2_xor  
+ element   1:m15       1:m16       1:m17       1:m18       1:m19     
+ model     0:p_18.1    0:p_18.1    0:p_18.1    0:p_18.1    0:p_18.1  
+ region    Subth       Cutoff      Cutoff      Cutoff      Subth     
+  id        -30.2140p     7.2512p    -6.1248p     6.1249p    18.9799p
+  ibs        73.1430a    89.1890a   1.026e-23    70.8131a   191.8046a
+  ibd        89.1890a   1.026e-23    70.8131a  -1.454e-25   189.1336a
+  vgs      -431.1947m     1.8000     36.5645n     1.3497   -431.1947m
+  vds      -431.1945m     1.8000     -1.3497      1.3497     19.0614m
+  vbs         1.3688      1.8000    199.2186n     1.3497      1.3688 
+  vth      -818.0299m  -504.9539m  -507.8011m  -507.8010m  -820.1430m
+  vdsat     -61.5031m   -57.3556m   -57.3632m   -57.3632m   -61.4429m
+  vod       386.8352m   504.9539m   507.8011m   507.8008m   369.8869m
+  beta      201.5788u   255.9810u   255.1698u   255.1698u   201.1258u
+  gam eff   549.3403m   557.0847m   557.0847m   557.0847m   549.4285m
+  gm        872.6438p   184.6737p   155.6461p   155.6472p   544.6887p
+  gds        22.2632p     2.6109p     2.4023p     2.4023p   808.2670p
+  gmb       180.5766p    65.4525p    55.5573p    55.5577p   114.0508p
+  cdtot     372.5881a   498.8182a   397.0288a   791.6136a   593.7765a
+  cgtot     459.8693a   546.9575a   546.9575a   546.9575a   459.8743a
+  cstot     399.4444a   372.5881a   498.8182a   397.0288a   592.3710a
+  cbtot     557.5314a   743.9996a   768.4403a     1.0612f   971.6374a
+  cgs       168.5973a   168.5890a   168.5960a   168.5890a   168.5908a
+  cgd       168.5889a   168.5961a   168.5890a   168.5960a   168.6016a
+
+
+
+ subckt    xhw2_xor    xhw2_xor  
+ element   1:m20       1:m21     
+ model     0:p_18.1    0:p_18.1  
+ region    Linear      Linear    
+  id         33.2428p   -33.2415p
+  ibs       2.267e-23   6.622e-26
+  ibd       6.528e-26   2.299e-23
+  vgs        -1.8000     -1.8000 
+  vds       160.8279n  -160.8216n
+  vbs       161.9251n     1.1151n
+  vth      -516.3361m  -516.3361m
+  vdsat    -993.8768m  -993.8768m
+  vod        -1.2837     -1.2837 
+  beta      212.9778u   212.9778u
+  gam eff   557.0847m   557.0847m
+  gm         17.7911p    17.7904p
+  gds       207.0769u   207.0769u
+  gmb         9.0858p     9.0855p
+  cdtot       1.2237f     1.5719f
+  cgtot       1.0533f     1.0533f
+  cstot       1.5625f     1.2237f
+  cbtot       1.1705f     1.1799f
+  cgs       514.4975a   531.8834a
+  cgd       531.8834a   514.4975a
+
+
+
+ ******
+ **110060012_hw2_xor**
+
+ ****** transient analysis tnom=  25.000 temp=  30.000 ******
+ power=  18.2489u  from=   0.             to=  50.0000n
+ delay1_xor=  -2.0337n  targ=  17.9813n   trig=  20.0150n
+ delay2_xor=  -2.0086n  targ=   3.0064n   trig=   5.0150n
+
+          ***** job concluded
+ ******  
+ **110060012_hw2_xor**
+
+ ****** job statistics summary tnom=  25.000 temp=  30.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4310 CPU @ 2.10GHz
+ cpu MHz	: 799.932
+  
+ OS:
+ Linux version 3.10.0-1160.105.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Thu Dec 7 15:39:45 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    48
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     306 # elements   =     376
+  # resistors   =     245 # capacitors =     105 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      22 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          40
+  transient          0.12        5001        1675         645 rev=        26
+  readin             0.03
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        461.89 megabytes
+           total cpu time            0.16 seconds
+           total elapsed time        0.84 seconds
+           job started at     20:21:16 11/23/2024
+           job ended   at     20:21:17 11/23/2024
+           job total runtime         0.84 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.68(s)

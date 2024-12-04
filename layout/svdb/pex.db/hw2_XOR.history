@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Fri Nov 15 23:33:32 2024 " "v2020.2_14.12" "-xrc -pdb -rcc -turbo 1 /home/VLSI_1131/ts110060012/VLSI/hw2/layout/_Rule.rce_"
+"Fri Nov 15 23:33:33 2024 " "v2020.2_14.12" "-xrc -fmt -all /home/VLSI_1131/ts110060012/VLSI/hw2/layout/_Rule.rce_"

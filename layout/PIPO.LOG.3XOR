@@ -1,0 +1,78 @@
+
+********************************************************************************
+Product   : Virtuoso(R) STREAM Out
+Program   : @(#)$CDS: pipo.exe version 5.1.0 11/22/2011 01:41 (cicln04) $
+SubVersion: sub-version 5.10.41.500.6.151
+Started at: 15-Nov-2024  02:18:11
+User Name : ts110060012
+Host Name : linuxcad30.ee.ncu.edu.tw
+Directory : /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+CADENCE Design Systems, Inc.
+********************************************************************************
+
+     1. translating cellview (3XOR layout)
+
+			Individual Cell Statistics
+
+CellView          Rectangles Polygons   Paths Ellipses Labels Instances Arrays  Nodes
+*************************************************************************************
+3XOR/layout              167        0       0       0       7       0       0      0
+
+
+                    Statistics Of Layers
+
+
+Cadence    Cadence    Stream   Stream
+ Layer     Purpose    Layer   Datatype Rectangles Polygons Paths  Ellipses  Labels   Nodes
+-------------------------------------------------------------------------------------------
+VIA1       drawing    47        0         30       0        0        0        0        0       
+DIFF       drawing    1         0         8        0        0        0        6        0       
+ME2        drawing    48        0         15       0        0        0        0        0       
+PIMP       drawing    11        0         2        0        0        0        0        0       
+PO1        drawing    41        0         22       0        0        0        0        0       
+ME1        drawing    46        0         40       0        0        0        0        0       
+NIMP       drawing    12        0         2        0        0        0        0        0       
+NW         drawing    3         0         1        0        0        0        0        0       
+CONT       drawing    39        0         47       0        0        0        1        0       
+
+
+   Summary Of Objects
+
+------------------------
+     167 Rectangles
+       0 Polygons
+       0 Paths
+       0 Ellipses
+       7 Labels
+       0 Instances
+       0 Arrays
+       1 Cells
+       0 Nodes
+
+
+00:00:00 Elapsed time
+00:00:00 CPU time
+
+    2311 Kbytes of memory
+
+*** There were no error or warning message ***
+
+The setup file's contents :
+
+streamOutKeys = list(nil
+	'userSkillFile             ""
+	'layerTable                ""
+	'convertPin                "geometry"
+	'libVersion                "5.0"
+	'units                     "micron"
+	'scale                     0.001
+	'cellMapTable              ""
+	'caseSensitivity           "preserve"
+	'summaryFile               "PIPO.SUM.3XOR"
+	'errFile                   "PIPO.LOG.3XOR"
+	'outFile                   "/home/VLSI_1131/ts110060012/VLSI/hw2/layout/3XOR.calibre.db"
+	'viewName                  "layout"
+	'primaryCell               "3XOR"
+	'libName                   "HW2"
+	'runDir                    "/home/VLSI_1131/ts110060012/VLSI/hw2/layout/"
+)

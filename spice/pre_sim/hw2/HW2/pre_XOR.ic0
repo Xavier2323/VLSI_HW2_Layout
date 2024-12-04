@@ -1,0 +1,29 @@
+* "simulator" "HSPICE" 
+* "version" "R-2020.12 linux64"
+* "format" "HSP"
+* "rundate" "19:16:39 11/15/2024 "
+* "netlist" "pre_XOR.sp "
+* "runtitle" "**110060012_hw2_xor**"
+* time =    0.            
+* temperature =   30.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ s = 145.2533n       
++ vdd =   1.8000        
++ xhw2_xor.inv_a =   1.8000        
++ xhw2_xor.inv_b =   1.8000        
++ xhw2_xor.inv_c =   1.8000        
++ xhw2_xor.n1 =   1.8000        
++ xhw2_xor.n2 = 450.2563m       
++ xhw2_xor.n3 =   1.8000        
++ xhw2_xor.n4 = 431.1950m       
++ xhw2_xor.n5 =  71.9826n       
++ xhw2_xor.n6 =  48.4178n       
++ xhw2_xor.n7 =  96.8355n       
++ xhw2_xor.n8 =  71.9826n       
+***   END: Saved Operating Point ***                     

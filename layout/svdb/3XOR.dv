@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/3XOR.dv
+dv_start notcompared                              
+dv_cell {3XOR} {hw2_XOR} notcompared
+dv_obj_count -transformed_nets {9 17} -transformed_inst {9 19} -transformed_port {0 6}
+dv_end

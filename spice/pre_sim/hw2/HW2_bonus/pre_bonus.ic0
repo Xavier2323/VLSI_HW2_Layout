@@ -1,0 +1,23 @@
+* "simulator" "HSPICE" 
+* "version" "R-2020.12 linux64"
+* "format" "HSP"
+* "rundate" "19:20:25 11/15/2024 "
+* "netlist" "pre_bonus.sp "
+* "runtitle" "**110060012_hw2_bonus**"
+* time =    0.            
+* temperature =   30.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ s =  49.3072n       
++ vdd =   1.8000        
++ xhw2_bonus.inv_a =   1.8000        
++ xhw2_bonus.inv_b =   1.8000        
++ xhw2_bonus.inv_c =   1.8000        
++ xhw2_bonus.inv_n1 =   1.8000        
++ xhw2_bonus.n1 =  49.3072n       
+***   END: Saved Operating Point ***                     

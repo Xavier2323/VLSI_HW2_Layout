@@ -1,0 +1,16 @@
+*drcRulesFile: /home/VLSI_1131/ts110060012/VLSI/hw2/layout/calibre/rule.drc
+*drcRunDir: /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+*drcLayoutPaths: hw2_XOR.calibre.db
+*drcLayoutPrimary: hw2_XOR
+*drcLayoutLibrary: HW2
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: hw2_XOR.drc.results
+*drcSummaryFile: hw2_XOR.drc.summary
+*drcDFMDefaultsResultsFile: hw2_XOR.dfmDefaults.db
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: HW2
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: hw2_XOR.def

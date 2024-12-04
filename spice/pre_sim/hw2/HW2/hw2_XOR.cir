@@ -1,0 +1,29 @@
+**Your code**
+.subckt INV in inv_out VDD GND
+Mp1 inv_out in VDD VDD p_18 l=0.18u w=0.47u
+Mn1 inv_out in GND GND n_18 l=0.18u w=0.47u
+.ends
+
+**Your design**
+.subckt hw2_XOR A B C S VDD GND
+**Your code**
+Xinv1 A inv_A VDD GND / INV  
+Xinv2 B inv_B VDD GND / INV
+Xinv3 C inv_C VDD GND / INV
+Mp1 net1 A VDD VDD p_18 l=0.18u w=0.47u
+Mp2 net2 inv_A VDD VDD p_18 l=0.18u w=0.47u
+Mp3 net3 B net1 VDD p_18 l=0.18u w=0.47u
+Mp4 net3 inv_B net2 VDD p_18 l=0.18u w=0.47u
+Mp5 net4 inv_B net1 VDD p_18 l=0.18u w=0.47u
+Mp6 net4 B net2 VDD p_18 l=0.18u w=0.47u
+Mp7 S inv_C net3 VDD p_18 l=0.18u w=0.47u
+Mp8 S C net4 VDD p_18 l=0.18u w=0.47u
+Mn1 net5 A GND GND n_18 l=0.18u w=0.47u
+Mn2 net6 inv_A GND GND n_18 l=0.18u w=0.47u
+Mn3 net7 B net5 GND n_18 l=0.18u w=0.47u
+Mn4 net7 inv_B net6 GND n_18 l=0.18u w=0.47u
+Mn5 net8 inv_B net5 GND n_18 l=0.18u w=0.47u
+Mn6 net8 B net6 GND n_18 l=0.18u w=0.47u
+Mn7 S inv_C net7 GND n_18 l=0.18u w=0.47u
+Mn8 S C net8 GND n_18 l=0.18u w=0.47u
+.ends

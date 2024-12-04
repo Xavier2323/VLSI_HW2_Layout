@@ -1,0 +1,249 @@
+ ****** HSPICE -- R-2020.12 linux64 (Nov 23 2020 6727817) ******                
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: pre_XOR.sp                                                        
+  Command line options: /home/tools/synopsys/hspice/2020.12/hspice/linux64/hspice -i pre_XOR.sp -o pre_XOR.lis
+  Start time: Fri Nov 15 19:16:39 2024
+ lic:  
+ lic: FLEXlm: SDK_12.9 
+ lic: USER:   ts110060012          HOSTNAME: linuxcad30.ee.ncu.edu.tw 
+ lic: HOSTID: "524f268a8c96"       PID:      21923 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
+ lic: 355(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  **warning** (hw2_XOR.cir:2) Global net name "vdd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- R-2020.12 linux64 (Nov 23 2020 6727817) ******                
+ ******  
+ **110060012_hw2_xor**
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xhw2_xor.                       hw2_xor            1.00 
+        2 xhw2_xor.xinv1.                 inv                1.00 
+        3 xhw2_xor.xinv2.                 inv                1.00 
+        4 xhw2_xor.xinv3.                 inv                1.00 
+  **info** (pre_XOR.sp:20) DC voltage reset to initial transient source value in source 0:v1. new dc=0.0000D+00
+ 
+
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=pre_XOR.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ **110060012_hw2_xor**
+
+ ****** operating point information tnom=  25.000 temp=  30.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:b       =   0.      0:c       =   0.     
+ +0:s       = 145.2533n 0:vdd     =   1.8000  1:inv_a   =   1.8000 
+ +1:inv_b   =   1.8000  1:inv_c   =   1.8000  1:n1      =   1.8000 
+ +1:n2      = 450.2563m 1:n3      =   1.8000  1:n4      = 431.1950m
+ +1:n5      =  71.9826n 1:n6      =  48.4178n 1:n7      =  96.8355n
+ +1:n8      =  71.9826n
+
+
+ **** voltage sources
+
+ subckt                                              
+ element  0:v1       0:v2       0:v3       0:vdd     
+  volts      0.         0.         0.         1.8000 
+  current    0.         0.         0.      -143.0220p
+  power      0.         0.         0.       257.4395p
+
+     total voltage source power dissipation=  257.4395p       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor  
+ element  1:mp1      1:mp2      1:mp3      1:mp4      1:mp5      1:mp6     
+ model    0:p_18.1   0:p_18.1   0:p_18.1   0:p_18.1   0:p_18.1   0:p_18.1  
+ region   Linear     Cutoff     Linear     Cutoff     Cutoff     Subth     
+  id       -24.0655p   -6.1249p  -16.5259p    6.1248p   -6.1707p  -18.9799p
+  ibs      1.554e-26  4.828e-27  1.700e-23  197.0017a  1.700e-23  197.0017a
+  ibd      1.698e-23  197.0017a  2.865e-23  2.867e-23  199.7838a  199.7838a
+  vgs       -1.8000  -160.8212n   -1.8000     1.3497   -44.3928n -450.2563m
+  vds     -116.4284n   -1.3497   -79.9518n    1.3497    -1.3688   -19.0612m
+  vbs        0.         0.       116.4284n    1.3497   116.4284n    1.3497 
+  vth     -516.3361m -507.8010m -516.3362m -507.8011m -507.6805m -820.1430m
+  vdsat   -993.8768m  -57.3632m -993.8767m  -57.3632m  -57.3629m  -61.4429m
+  vod       -1.2837   507.8009m   -1.2837   507.8011m  507.6805m  369.8867m
+  beta     212.9778u  255.1698u  212.9778u  255.1698u  255.2040u  201.1258u
+  gam eff  557.0847m  557.0847m  557.0847m  557.0847m  557.0847m  549.4285m
+  gm        12.8795p  155.6472p    8.8444p  155.6461p  156.8266p  544.6890p
+  gds      207.0769u    2.4023p  207.0769u    2.4023p    2.4100p  808.2751p
+  gmb        6.5775p   55.5577p    4.5168p   55.5573p   55.9623p  114.0508p
+  cdtot      1.5906f  612.7867a    1.5906f  819.6877a  611.3260a  611.3299a
+  cgtot      1.0533f  546.9575a    1.0533f  546.9575a  546.9575a  459.8743a
+  cstot      1.5399f  819.6878a    1.5399f  612.7867a  819.6878a  612.7995a
+  cbtot      1.5148f    1.3051f    1.5148f    1.3051f    1.3036f    1.0096f
+  cgs      531.8834a  168.5960a  531.8834a  168.5890a  168.5960a  168.6016a
+  cgd      514.4975a  168.5890a  514.4975a  168.5960a  168.5890a  168.5908a
+
+
+
+ subckt   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor  
+ element  1:mp7      1:mp8      1:mn1      1:mn2      1:mn3      1:mn4     
+ model    0:p_18.1   0:p_18.1   0:n_18.1   0:n_18.1   0:n_18.1   0:n_18.1  
+ region   Cutoff     Subth      Cutoff     Linear     Cutoff     Linear    
+  id        -7.2512p  -30.2143p   12.0003a   43.2973p    4.1432a   43.2973p
+  ibs      2.867e-23  199.7838a    0.      -4.597e-26 -1.727e-23 -1.166e-23
+  ibd      262.7188a  262.7188a -1.727e-23 -1.157e-23 -2.323e-23 -2.319e-23
+  vgs       35.5591n -431.1950m    0.         1.8000   -71.9826n    1.8000 
+  vds       -1.8000  -431.1949m   71.9826n   48.4178n   24.8529n   48.4178n
+  vbs      196.3802n    1.3688     0.         0.       -71.9826n  -48.4178n
+  vth     -504.9539m -818.0298m  487.4233m  487.4233m  487.4233m  487.4233m
+  vdsat    -57.3556m  -61.5031m   57.3082m  547.3153m   57.3082m  547.3153m
+  vod      504.9539m  386.8347m -487.4233m    1.3126  -487.4234m    1.3126 
+  beta     255.9810u  201.5789u  928.3725u  706.1775u  928.3725u  706.1776u
+  gam eff  557.0847m  549.3403m  507.4459m  507.4459m  507.4459m  507.4459m
+  gm       184.6737p  872.6542p  359.5896a   18.9324p  124.1526a   18.9324p
+  gds        2.6109p   22.2635p  166.7109p  901.3776u  166.7107p  901.3776u
+  gmb       65.4525p  180.5787p   38.1175a    5.6329p   13.1605a    5.6329p
+  cdtot    582.4853a  582.4853a  874.7631a    1.5494f  874.7631a    1.5494f
+  cgtot    546.9575a  459.8693a  532.0699a    1.0148f  532.0699a    1.0148f
+  cstot    819.6878a  611.3334a  874.7631a    1.4828f  874.7631a    1.4828f
+  cbtot      1.2748f  979.3177a    1.5516f    1.5291f    1.5516f    1.5291f
+  cgs      168.5961a  168.5973a  182.5066a  475.3568a  182.5066a  475.3568a
+  cgd      168.5890a  168.5889a  182.5012a  480.4680a  182.5012a  480.4680a
+
+
+
+ subckt   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor   xhw2_xor.x xhw2_xor.x
+ element  1:mn5      1:mn6      1:mn7      1:mn8      2:mp1      2:mn1     
+ model    0:n_18.1   0:n_18.1   0:n_18.1   0:n_18.1   0:p_18.1   0:n_18.1  
+ region   Linear     Cutoff     Linear     Cutoff     Linear     Cutoff    
+  id         8.1202a    3.9285a   43.2973p   12.2150a  -33.2414p   29.6410p
+  ibs     -1.727e-23 -1.162e-23 -2.328e-23 -1.727e-23  2.147e-26 -3.338e-26
+  ibd     -1.727e-23 -1.727e-23 -3.480e-23 -3.485e-23  2.345e-23 -431.8283a
+  vgs        1.8000   -48.4178n    1.8000   -71.9826n   -1.8000     0.     
+  vds        9.0805f   23.5649n   48.4178n   73.2707n -160.8212n    1.8000 
+  vbs      -71.9826n  -48.4178n  -96.8355n  -71.9826n    0.         0.     
+  vth      487.4233m  487.4233m  487.4234m  487.4233m -516.3361m  420.6683m
+  vdsat    547.3153m   57.3082m  547.3153m   57.3082m -993.8768m   57.2832m
+  vod        1.3126  -487.4234m    1.3126  -487.4234m   -1.2837  -420.6683m
+  beta     706.1776u  928.3725u  706.1776u  928.3725u  212.9778u  933.1625u
+  gam eff  507.4459m  507.4459m  507.4459m  507.4459m  557.0847m  507.4459m
+  gm         3.5507a  117.7183a   18.9324p  366.0231a   17.7903p  950.1982p
+  gds      901.3777u  166.7108p  901.3775u  166.7105p  207.0769u   25.0634p
+  gmb        1.0564a   12.4785a    5.6329p   38.7995a    9.0854p  124.2676p
+  cdtot      1.5494f  874.7631a    1.5494f  874.7631a    1.5906f  637.2790a
+  cgtot      1.0148f  532.0699a    1.0148f  532.0699a    1.0533f  532.0701a
+  cstot      1.4828f  874.7631a    1.4828f  874.7631a    1.5399f  874.7634a
+  cbtot      1.5291f    1.5516f    1.5291f    1.5516f    1.5148f    1.3141f
+  cgs      475.3567a  182.5066a  475.3568a  182.5066a  531.8834a  182.5071a
+  cgd      480.4680a  182.5012a  480.4680a  182.5012a  514.4975a  182.5010a
+
+
+
+ subckt   xhw2_xor.x xhw2_xor.x xhw2_xor.x xhw2_xor.x
+ element  3:mp1      3:mn1      4:mp1      4:mn1     
+ model    0:p_18.1   0:n_18.1   0:p_18.1   0:n_18.1  
+ region   Linear     Cutoff     Linear     Cutoff    
+  id       -33.2414p   29.6410p  -33.2414p   29.6410p
+  ibs      2.147e-26 -3.338e-26  2.147e-26 -3.338e-26
+  ibd      2.345e-23 -431.8283a  2.345e-23 -431.8283a
+  vgs       -1.8000     0.        -1.8000     0.     
+  vds     -160.8212n    1.8000  -160.8212n    1.8000 
+  vbs        0.         0.         0.         0.     
+  vth     -516.3361m  420.6683m -516.3361m  420.6683m
+  vdsat   -993.8768m   57.2832m -993.8768m   57.2832m
+  vod       -1.2837  -420.6683m   -1.2837  -420.6683m
+  beta     212.9778u  933.1625u  212.9778u  933.1625u
+  gam eff  557.0847m  507.4459m  557.0847m  507.4459m
+  gm        17.7903p  950.1982p   17.7903p  950.1982p
+  gds      207.0769u   25.0634p  207.0769u   25.0634p
+  gmb        9.0854p  124.2676p    9.0854p  124.2676p
+  cdtot      1.5906f  637.2790a    1.5906f  637.2790a
+  cgtot      1.0533f  532.0701a    1.0533f  532.0701a
+  cstot      1.5399f  874.7634a    1.5399f  874.7634a
+  cbtot      1.5148f    1.3141f    1.5148f    1.3141f
+  cgs      531.8834a  182.5071a  531.8834a  182.5071a
+  cgd      514.4975a  182.5010a  514.4975a  182.5010a
+
+
+
+ ******
+ **110060012_hw2_xor**
+
+ ****** transient analysis tnom=  25.000 temp=  30.000 ******
+ power=  13.5208u  from=   0.             to=  50.0000n
+ delay1_xor=  -2.1077n  targ=  17.9073n   trig=  20.0150n
+ delay2_xor=  -2.0975n  targ=   2.9175n   trig=   5.0150n
+
+          ***** job concluded
+ ******  
+ **110060012_hw2_xor**
+
+ ****** job statistics summary tnom=  25.000 temp=  30.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4310 CPU @ 2.10GHz
+ cpu MHz	: 2949.536
+  
+ OS:
+ Linux version 3.10.0-1160.105.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Thu Dec 7 15:39:45 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    48
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      61 # elements   =      27
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      22 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          26
+  transient          0.07        5001        1727         636 rev=        55
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        460.77 megabytes
+           total cpu time            0.09 seconds
+           total elapsed time        0.66 seconds
+           job started at     19:16:39 11/15/2024
+           job ended   at     19:16:39 11/15/2024
+           job total runtime         0.66 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.57(s)

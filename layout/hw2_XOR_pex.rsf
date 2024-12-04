@@ -1,0 +1,23 @@
+*pexRulesFile: /home/VLSI_1131/ts110060012/VLSI/hw2/layout/calibre/Rule.rce
+*pexRunDir: /home/VLSI_1131/ts110060012/VLSI/hw2/layout
+*pexLayoutPaths: hw2_XOR.calibre.db
+*pexLayoutPrimary: hw2_XOR
+*pexLayoutLibrary: HW2
+*pexLayoutView: layout
+*pexLayoutGetFromViewer: 1
+*pexSourcePath: hw2_XOR.src.net
+*pexSourcePrimary: hw2_XOR
+*pexSourceLibrary: HW2
+*pexReportFile: hw2_XOR.lvs.report
+*pexPexNetlistFile: hw2_XOR.pex.cir
+*pexPexNetlistFormat: HSPICE
+*pexPexNetlistNameSource: LAYOUTNAMES
+*pexPexReportFile: hw2_XOR.pex.report
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: HW2
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: hw2_XOR.def

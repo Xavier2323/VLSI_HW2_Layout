@@ -1,0 +1,13 @@
+\o Program:		@(#)$CDS: libManager.exe version Exp 01/19/2010 20:09 (ocelot-linux) $
+\o Sub version:		sub-version none
+\o Arguments:		-unmapped -mpssession icfb28289 -mpshost linuxcad30.ee.ncu.edu.tw 
+\o Working Directory:	linuxcad30.ee.ncu.edu.tw:/home/VLSI_1131/ts110060012/VLSI/hw2/layout
+\o Extended color mode (TrueColor 32 0x43) in use.
+\o Library Manager customization server connected.
+MPS service: map window
+\o Log file is "/home/VLSI_1131/ts110060012/VLSI/hw2/layout/libManager.log".
+Opening libManager window.
+No main selection
+\o Auto refresh applied.
+Main selection: HW2 Inv layout
+Invoking command (fileNewCellView).
